@@ -24,6 +24,7 @@ df = df[(df_norm>1e-5)
         .max()
         .reindex(df.index)==1]
 
+# Normalise the columns
 df_norm = df/df.sum()
 
 # Create the plotting function for a single year
